@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt # to plot the data
 import numpy as np # to work with numbers
 import csv # to work with csv files
 
+import warnings
+warnings.simplefilter("ignore")
+
 # this program is going to try to read the data from the serial port,
 # if the port is busy, a message will appear in the terminal
 try:
@@ -24,6 +27,7 @@ filename = "data.csv"
 file = open(filename, "r+")
 file.truncate(0)
 file.close()
+
 # open the file to add components to it
 file = open (filename, "a+")
 
@@ -50,11 +54,18 @@ with open(filename, 'r') as file:
 		y.append(int(row[1]))
 
 # to plot the data
+fig = plt.figure()
 plt.title('Arduino Serial')
 plt.xlabel('Position')
 plt.ylabel('Voltage')
 plt.plot(x, y)
 plt.show()
 
-
 print("Your data is stored in '" + filename + "' file")
+print("name your plot file ('filename.png')")
+imgfile = input()
+print("filename = " + imgfile)
+print("Press 'c' to confirm")
+savepath = "plots/"+imgfile
+fig.savefig(savepath, bbox_inches="tight" )
+
