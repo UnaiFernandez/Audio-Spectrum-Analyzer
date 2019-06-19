@@ -65,7 +65,6 @@ print("Your data is stored in '" + filename + "' file")
 print("name your plot file ('filename.png')")
 imgfile = input()
 print("filename = " + imgfile)
-print("Press 'c' to confirm")
 savepath = "plots/"+imgfile
 fig.savefig(savepath, bbox_inches="tight" )
 
