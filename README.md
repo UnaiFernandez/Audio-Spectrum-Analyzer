@@ -1,6 +1,6 @@
 # Audio-Spectrum-Analyzer
 
-##Materials
+## Materials
 
 * Arduino UNO
 * MSGEQ7
