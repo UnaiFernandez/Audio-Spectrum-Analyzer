@@ -2,9 +2,9 @@
 
 ## Materials
 
-* [X]Arduino UNO
-* [ ]MSGEQ7
-* [ ]Sound sensor
-* [ ]Resistors
-* [ ]Condensers
+* [X] Arduino UNO
+* [ ] MSGEQ7
+* [ ] Sound sensor
+* [ ] Resistors
+* [ ] Condensers
 
