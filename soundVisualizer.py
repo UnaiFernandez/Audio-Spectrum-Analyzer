@@ -4,6 +4,7 @@ import tqdm # library for the progressbar
 import matplotlib.pyplot as plt # to plot the data
 import numpy as np # to work with numbers
 import csv # to work with csv files
+from getpass import getpass # to hide the input when asking [Y/N]
 
 import warnings
 warnings.simplefilter("ignore")
@@ -61,10 +62,15 @@ plt.ylabel('Voltage')
 plt.plot(x, y)
 plt.show()
 
-print("Your data is stored in '" + filename + "' file")
-print("name your plot file ('filename.png')")
-imgfile = input()
-print("filename = " + imgfile)
-savepath = "plots/"+imgfile
-fig.savefig(savepath, bbox_inches="tight" )
 
+print("Your data is stored in '" + filename + "' file")
+yn = getpass("Save the plot? [Y/N]")
+if (yn == 'y'):
+	print("name your plot file ('filename.png')")
+	imgfile = input()
+	print("your file was stored as '" + imgfile + "' in '/plots' directory")
+	savepath = "plots/"+imgfile
+	fig.savefig(savepath, bbox_inches="tight" )
+	print("Done!, plot saved")
+else:
+	print("Done!, plot don't saved")
