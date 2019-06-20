@@ -4,7 +4,7 @@
 
 * [X] Arduino UNO
 * [ ] MSGEQ7
-* [ ] Sound sensor
+* [X] Sound sensor
 * [ ] Resistors
 * [ ] Condensers
 
