@@ -1,3 +1,15 @@
+#include <Wire.h>
+#include <LCD.h>
+#include <LiquidCrystal_I2C.h>
+#include <LcdBarGraphX.h>
+
+LiquidCrystal_I2C lcd (0x27, 2, 1, 0, 4, 5, 6, 7);
+
+LcdBarGraphX rjx(&lcd, 16, 0, 1);
+
+int V = 0;
+int Max = 700;
+
 void setup() {
   // Variable declaration
   int cont = 1;
@@ -16,9 +28,21 @@ void setup() {
     cont++;
   }
   Serial.println("Read finished");
+
+  //LCD setup
+
+  lcd.setBacklightPin(3, POSITIVE); 
+  lcd.setBacklight(HIGH);
+  
+
+  lcd.begin(16,2);
+  lcd.print("AEA");
+
+  delay(3000);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  rjx.drawValue(V, Max);
+  lcd.setCursor(0, 0);
+  lcd.print("Volume");
 }
