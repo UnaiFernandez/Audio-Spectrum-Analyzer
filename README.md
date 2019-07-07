@@ -7,4 +7,5 @@
 * [X] Sound sensor
 * [ ] Resistors
 * [ ] Condensers
+* [X] LCD display
 
