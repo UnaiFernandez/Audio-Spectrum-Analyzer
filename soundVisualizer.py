@@ -73,4 +73,4 @@ if (yn == 'y'):
 	fig.savefig(savepath, bbox_inches="tight" )
 	print("Done!, plot saved")
 else:
-	print("Done!, plot don't saved")
+	print("Done!, plot not saved")
