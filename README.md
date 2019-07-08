@@ -7,4 +7,24 @@
 * [X] Sound sensor
 * [ ] Resistors
 * [ ] Condensers
+* [X] LCD display
+
+## Description
+
+This project consists in an audio spectrum analizer. 
+A microphone will take data for a while, then the data obtained will be read by a python program. Finally usin the matplotlib libray we will get the spectrogram of the audio recorded.
+
+## Circuits
+
+The sound sensor, the LCD display and the MSGEQ7 are the most important components of the circuit.
+
+### sound sensor
+
+### LCD diplay
+
+### MSGQ7
+This chip is a seven band graph ecualyzer, it is a CMOS chip that divides the espectre of audio in seven bands (63Hz, 160Hz, 400Hz, 1kHz, 2.5KHz, 6.25KHz, 16KHz).
+The seven frecuences are detected and multiplexed in the output.
+
+
 
