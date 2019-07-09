@@ -8,6 +8,7 @@
 * [ ] Resistors
 * [ ] Condensers
 * [X] LCD display
+* [ ] Amplifier
 
 ## Description
 
@@ -19,6 +20,10 @@ A microphone will take data for a while, then the data obtained will be read by 
 The sound sensor, the LCD display and the MSGEQ7 are the most important components of the circuit.
 
 ### sound sensor
+The analogic output of this sensor lets us obtain a estimate the volume registered.
+This type of modules with microphone aren't adecuate to measure the sound in a analogic way, they lack of amplification. We'll use KY-038 for this project.
+
+![](images/SSensor.png)
 
 ### LCD diplay
 It converts electric signals into visual information for the human eye.
