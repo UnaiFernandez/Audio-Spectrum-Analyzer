@@ -26,5 +26,10 @@ The sound sensor, the LCD display and the MSGEQ7 are the most important componen
 This chip is a seven band graph ecualyzer, it is a CMOS chip that divides the espectre of audio in seven bands (63Hz, 160Hz, 400Hz, 1kHz, 2.5KHz, 6.25KHz, 16KHz).
 The seven frecuences are detected and multiplexed in the output.
 
+![](images/MSGEQ7.png)
 
+## Dependencies
 
+All the dependescies used in this projects have been installed with pip3.
+
+  * [ ] matplotlib
