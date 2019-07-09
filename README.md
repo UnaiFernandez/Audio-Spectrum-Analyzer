@@ -21,6 +21,12 @@ The sound sensor, the LCD display and the MSGEQ7 are the most important componen
 ### sound sensor
 
 ### LCD diplay
+It converts electric signals into visual information for the human eye.
+In this case the LCD has 2 rows of 16 characters.
+
+![](images/LCD.png)
+
+To be able to control the LCD only using two pins of the arduino board, we'll use an adapter module from LCD to I2C.
 
 ### MSGQ7
 This chip is a seven band graph ecualyzer, it is a CMOS chip that divides the espectre of audio in seven bands (63Hz, 160Hz, 400Hz, 1kHz, 2.5KHz, 6.25KHz, 16KHz).
