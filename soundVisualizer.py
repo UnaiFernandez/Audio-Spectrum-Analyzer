@@ -62,15 +62,13 @@ plt.ylabel('Voltage')
 plt.plot(x, y)
 plt.show()
 
-
-print("Your data is stored in '" + filename + "' file")
-yn = getpass("Save the plot? [Y/N]")
+yn = getpass("--> Do you want to save the plot? [Y/N]")
 if (yn == 'y'):
-	print("name your plot file ('filename.png')")
-	imgfile = input()
-	print("your file was stored as '" + imgfile + "' in '/plots' directory")
+	print("--> Name your plot file")
+	imgfile = input()+".png"
+	print("--> Your file has been saved and stored successfully as '" + imgfile + "' in '/plots' directory")
 	savepath = "plots/"+imgfile
 	fig.savefig(savepath, bbox_inches="tight" )
-	print("Done!, plot saved")
 else:
-	print("Done!, plot not saved")
+	print("--> Done!, plot not saved")
+
