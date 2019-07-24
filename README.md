@@ -5,8 +5,12 @@
 * [X] Arduino UNO
 * [ ] MSGEQ7
 * [X] Sound sensor
-* [ ] Resistors
+* [X] Resistors
+* * [X] 200kΩ
+* * [X] 22kΩ
 * [ ] Condensers
+* * [ ] 33µF
+* * [ ] 0.1µF (x3)
 * [X] LCD display
 * [ ] Amplifier
 
