@@ -8,9 +8,9 @@
 * [X] Resistors
 * * [X] 200kΩ
 * * [X] 22kΩ
-* [ ] Condensers
-* * [ ] 33µF
-* * [ ] 0.1µF (x3)
+* [X] Condensers
+* * [X] 33µF
+* * [X] 0.1µF (x3)
 * [X] LCD display
 * [ ] Amplifier
 
