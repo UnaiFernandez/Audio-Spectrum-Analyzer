@@ -53,4 +53,10 @@ The MAX9814 will be more useful than the sound sensor used in previous  versions
 
 All the dependescies used in this projects have been installed with pip3.
 
-  * [ ] matplotlib
+  * matplotlib
+  * serial
+  * time
+  * tqdm
+  * csv
+  * getpass
+  * numpy
