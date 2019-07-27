@@ -43,6 +43,12 @@ The seven frecuences are detected and multiplexed in the output.
 
 ![](images/MSGEQ7.png)
 
+### MAX9814 BOB
+
+This chip comes with a 20-20kHZ electret microphone soldered on. For the amplification the chip uses the MAX9814.
+The MAX9814 will be more useful than the sound sensor used in previous  versions. The new chip allows us to transmit the output of the microphone to the msgeq7 sensor.
+
+![](images/max9814bob.jpg)
 ## Dependencies
 
 All the dependescies used in this projects have been installed with pip3.
